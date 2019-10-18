@@ -1,0 +1,14 @@
+@font-face{
+    font-family: font;
+    src: url(./fonts/Japanischer_Schriftstyl.ttf);
+}
+
+body{
+    background-color: rgb(226, 225, 225);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: font;
+    color: rgb(165, 38, 38);
+}
