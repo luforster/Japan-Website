@@ -47,13 +47,14 @@ body{
     width: 89%;
     right: 0;
     position: fixed;
+    overflow: auto;
    
 }
 
 header h1{
     margin: 0;
     padding: 10px;
-    width: 100%;
+   
     text-align: center;
     font-family: font;
     font-size: 70px;
@@ -80,7 +81,7 @@ header h1 img{
     text-align: center;
     font-family: font;
     font-size: 50px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #home h3{
