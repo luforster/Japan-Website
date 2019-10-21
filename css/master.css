@@ -29,6 +29,7 @@ body{
     background-color: rgb(241, 241, 241);
     padding-top: 85px;
     border-right: 2px solid rgb(211, 211, 211);
+    overflow: hidden;
 }
 
 .nav a{
@@ -38,6 +39,18 @@ body{
     font-family: font;
     font-size: 22px;
     font-weight: bold;
+}
+
+#nav-button{
+    float: left;
+    visibility: hidden;
+}
+#nav-close{
+    visibility: hidden;
+    color: rgb(165, 38, 38);
+    z-index: 1;
+    font-size: 70px;
+    padding: 10px;
 }
 
 .nav ul{
@@ -59,7 +72,6 @@ body{
 header h1{
     margin: 0;
     padding: 10px;
-   
     text-align: center;
     font-family: font;
     font-size: 70px;
@@ -122,6 +134,56 @@ header h1 img{
 
 .text{
     width: 70%;
+}
+
+@media screen and (max-width: 950px) {
+    .nav{
+        width: 0;
+        border: none;
+    }
+
+    #home{
+        width: 100%;
+    }
+
+    #nav-button{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    header h1{
+        font-size: 30px ;
+        padding: 0;
+    }
+
+    #home h2{
+        font-size: 35px ;
+        padding: 0;
+    }
+
+    #home p{
+        font-size: 13px ;
+    }
+
+    .nav a{
+        font-size: 15px ;
+    }
+    
+    header img{
+        width: 0;
+        height: 0;
+    }
+
+    #nav-close{
+        font-size: 30px;
+    }
+    #nav-button{
+        margin: 9px;
+        
+    }
+
 }
 
 
