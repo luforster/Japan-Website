@@ -1,24 +1,24 @@
 
 @font-face{
-    font-family: font;
+    font-family: font;                                      /* eigene Schrift hinzugefügt */
     src: url(../fonts/Japanischer_Schriftstyl.ttf);
 }
 
-html{
+html{                   /* allgemein daten für die website */
     height: 100%;
     width: 100%;
     
 }
-body{
+body{                  /* die grösse vom Body part */ 
     padding: 0;
     margin: 0;
 }
 
-#wrapper{
+#wrapper{                   /*  */
     display: flex;
 }
 
-.nav{
+.nav{                           /* einstelluneg für die navigation */
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -32,7 +32,7 @@ body{
     overflow: hidden;
 }
 
-.nav a{
+.nav a{                         /* links in der navigation */
     padding: 10px;
     color: rgb(165, 38, 38);
     text-decoration: none;
@@ -41,11 +41,11 @@ body{
     font-weight: bold;
 }
 
-#nav-button{
+#nav-button{                /* einstellungen für den navigations button */
     float: left;
     visibility: hidden;
 }
-#nav-close{
+#nav-close{                     /* einstellungen für den navigationsbutton zum schliessen */
     visibility: hidden;
     color: rgb(165, 38, 38);
     z-index: 1;
@@ -53,14 +53,14 @@ body{
     padding: 10px;
 }
 
-.nav ul{
+.nav ul{                 /* unternavigations punkte */
     margin: 0;
     font-size: 20px;
     color: rgb(165, 38, 38);
 }
 
 
-#home{
+#home{                       /* rest der seite (titel, text...) */
     height: 100%;
     width: 89%;
     right: 0;
@@ -121,22 +121,22 @@ header h1 img{
     width: 100%;
 }
 
-.textbox .imgbox{
+.textbox .imgbox{           /* textbox für die imagebox */
     width: 100%;
     display: flex;
     justify-content: center;
 
 }
-.textbox .imgbox img{
+.textbox .imgbox img{       /* grösse der bilder */
     width: 400px;
 
 }
 
-.text{
+.text{                   /* grösse des Textes im Body Bereich */
     width: 70%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {       /* media querry angepasst */
     .nav{
         width: 0;
         border: none;
@@ -190,7 +190,3 @@ header h1 img{
     }
 
 }
-
-
-
-/* 950 PX Breite Media Querry */
